@@ -1,16 +1,17 @@
-function fizzbuzz(max) {
+for (let i = 1; i <= 20; i++) {
+  const mensagem = fizzbuzz(i);
+  console.log(mensagem);
+}
 
-for(let i=1; i<=20; i++) {
-    let mensagem = ""   
-    if (i%3 === 0) {
-      mensagem = mensagem + "Fizz"   
-    }
-    if (i%5 === 0) {
-      mensagem += "Buzz"
-   } 
-    if (mensagem.length === 0) {
-    mensagem = String(i)   
-   }
-  console.log (mensagem)
+function fizzbuzz(numero) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+    return "FizzBuzz";
+  } else if (numero % 3 === 0) {
+    return "Fizz";
+  } else if (numero % 5 === 0) {
+    return "Buzz";
+  } else {
+    return String(numero);
+  }
 }
-}
+
