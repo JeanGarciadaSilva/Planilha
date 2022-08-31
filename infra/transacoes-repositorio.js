@@ -2,13 +2,11 @@ const transacoes = {
     transacoes: [
         {
             valor: 10,
-            descricao: "Pastel",
-            categoria: "Despesa"
+            descricao: "Pastel"
         },
         {
             valor: 3,
-            descricao: "Doce",
-            categoria: "Receita"
+            descricao: "Doce"
         }
     ]
 }
